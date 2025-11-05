@@ -119,10 +119,10 @@ static int init_driver_fd(void) {
 }
 
 /* Execute ioctl command */
-static int ksuctl(unsigned long request, void *arg) {
+static int ksuctl(uint32_t request, void *arg) {
   if (driver_fd < 0) return -1;
 
-  int ret = ioctl(driver_fd, request, arg);
+  int ret = ioctl(driver_fd, (int)request, arg);
   if (ret < 0) {
     return -1;
   }
