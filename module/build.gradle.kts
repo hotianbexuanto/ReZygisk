@@ -24,8 +24,11 @@ val moduleId: String by rootProject.extra
 val moduleName: String by rootProject.extra
 val verCode: Int by rootProject.extra
 val verName: String by rootProject.extra
+val minAPatchVersion: Int by rootProject.extra
 val minKsuVersion: Int by rootProject.extra
 val minKsudVersion: Int by rootProject.extra
+val minMagiskVersion: Int by rootProject.extra
+val commitHash: String by rootProject.extra
 val minMagiskVersion: Int by rootProject.extra
 val commitHash: String by rootProject.extra
 
