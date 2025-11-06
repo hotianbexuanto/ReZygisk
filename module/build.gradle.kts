@@ -29,8 +29,6 @@ val minKsuVersion: Int by rootProject.extra
 val minKsudVersion: Int by rootProject.extra
 val minMagiskVersion: Int by rootProject.extra
 val commitHash: String by rootProject.extra
-val minMagiskVersion: Int by rootProject.extra
-val commitHash: String by rootProject.extra
 
 android.buildFeatures {
     androidResources = false
