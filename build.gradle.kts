@@ -9,7 +9,7 @@ fun String.execute(currentWorkingDir: File = file("./")): String {
     val byteOut = ByteArrayOutputStream()
     project.exec {
         workingDir = currentWorkingDir
-        commandLine = split("\\s".toRegex())
+        commandLine = split("\s".toRegex())
         standardOutput = byteOut
     }
     return String(byteOut.toByteArray()).trim()
@@ -26,7 +26,7 @@ val commitHash by extra(gitCommitHash)
 val minAPatchVersion by extra(10655)
 val minKsuVersion by extra(10940)
 val minKsudVersion by extra(11425)
-val maxKsuVersion by extra(20000)
+// Removed maxKsuVersion limit to support all future KernelSU versions
 val minMagiskVersion by extra(26402)
 
 val androidMinSdkVersion by extra(26)

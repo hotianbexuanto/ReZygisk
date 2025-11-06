@@ -20,7 +20,6 @@ fun getLatestNDKPath(): String {
 
 val minAPatchVersion: Int by rootProject.extra
 val minKsuVersion: Int by rootProject.extra
-val maxKsuVersion: Int by rootProject.extra
 val minMagiskVersion: Int by rootProject.extra
 val verCode: Int by rootProject.extra
 val verName: String by rootProject.extra
@@ -32,7 +31,6 @@ val CStandardFlags = arrayOf(
   "-Wconversion", "-Wno-fixed-enum-extension", "-Iroot_impl", "-llog",
   "-DMIN_APATCH_VERSION=$minAPatchVersion",
   "-DMIN_KSU_VERSION=$minKsuVersion",
-  "-DMAX_KSU_VERSION=$maxKsuVersion",
   "-DMIN_MAGISK_VERSION=$minMagiskVersion",
   "-DZKSU_VERSION=\"$verName\""
 )
