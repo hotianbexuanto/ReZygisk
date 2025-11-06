@@ -9,7 +9,7 @@ fun String.execute(currentWorkingDir: File = file("./")): String {
     val byteOut = ByteArrayOutputStream()
     project.exec {
         workingDir = currentWorkingDir
-        commandLine = split("\s".toRegex())
+        commandLine = split("\\s".toRegex())
         standardOutput = byteOut
     }
     return String(byteOut.toByteArray()).trim()
